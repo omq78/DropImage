@@ -13,6 +13,7 @@
 		32FBA35322D0B464002124FD /* DropImage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32FBA35122D0B464002124FD /* DropImage.xcdatamodeld */; };
 		32FBA35522D0B466002124FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FBA35422D0B466002124FD /* Assets.xcassets */; };
 		32FBA35822D0B466002124FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FBA35622D0B466002124FD /* LaunchScreen.storyboard */; };
+		32FBA36022D7930E002124FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FBA35F22D7930E002124FD /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32FBA35422D0B466002124FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32FBA35722D0B466002124FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32FBA35922D0B466002124FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FBA35F22D7930E002124FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				32FBA34C22D0B464002124FD /* ViewController.swift */,
 				32FBA34E22D0B464002124FD /* Main.storyboard */,
 				32FBA35422D0B466002124FD /* Assets.xcassets */,
+				32FBA35F22D7930E002124FD /* Extensions.swift */,
 				32FBA35622D0B466002124FD /* LaunchScreen.storyboard */,
 				32FBA35922D0B466002124FD /* Info.plist */,
 				32FBA35122D0B464002124FD /* DropImage.xcdatamodeld */,
@@ -141,6 +144,7 @@
 				32FBA34D22D0B464002124FD /* ViewController.swift in Sources */,
 				32FBA35322D0B464002124FD /* DropImage.xcdatamodeld in Sources */,
 				32FBA34B22D0B464002124FD /* AppDelegate.swift in Sources */,
+				32FBA36022D7930E002124FD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

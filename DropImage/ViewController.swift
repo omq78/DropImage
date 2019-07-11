@@ -47,8 +47,22 @@ class ViewController: UIViewController, UIDropInteractionDelegate, UIDragInterac
         super.viewDidLoad()
         view.addInteraction(UIDropInteraction(delegate: self))
         view.addInteraction(UIDragInteraction(delegate: self))
+        
+        view.backgroundColor = UIColor.paintPadBackgroundColor
+        navigationItem.title = "Make Your Image"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "share", style: .plain, target: self, action: #selector(shareImage))
     }
     
+    @objc func shareImage(){
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return }
+        UIGraphicsEndImageContext()
+        
+        let activityController = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        activityController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(activityController, animated: true, completion: nil)
+    }
     
     func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {
         return session.canLoadObjects(ofClass: UIImage.self)
