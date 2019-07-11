@@ -85,6 +85,10 @@ class ViewController: UIViewController, UIDropInteractionDelegate, UIDragInterac
                 DispatchQueue.main.async {
                     let imageView = UIImageView(image: draggedImage)
                     imageView.isUserInteractionEnabled = true
+                    imageView.layer.borderWidth = 4
+                    imageView.layer.borderColor = UIColor.black.cgColor
+                    imageView.layer.shadowRadius = 5
+                    imageView.layer.shadowOpacity = 0.3
                     imageView.frame = CGRect(x: 0, y: 0, width: draggedImage.size.width, height: draggedImage.size.height)
                     let imageCenter = session.location(in: self.view)
                     imageView.center = imageCenter
